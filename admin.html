@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zvent - Turning Visions into Unforgettable Events</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+    header { background-image: url(invitebanner.png); background-position: center; background-size: cover; height: 25vh; color: white; padding: 40px 20px; text-align: center; display: flex; justify-content: center; align-items: center;}
+    header h1 { margin: 0; font-size: 2.5em; }
+    header p {font-size: large; font-weight: 900; color: white;}
+    .navbar {display: flex; }
+    nav { background: #6a1b9a; display: flex; justify-content: center; padding: 10px; }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    .services, .success-stories, .testimonials { background: #f3f3f3; margin-top: 30px; border-radius: 8px; padding: 20px; }
+    .card { margin-bottom: 20px; margin-left: 5px; margin-right: 5px; background: #fff; padding: 15px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .card h3 { margin-top: 0; }
+    .card-cont {display: flex; }
+    footer { background: #4a148c; color: #fff; text-align: center; padding: 30px 20px; margin-top: 40px; }
+    .cta-box { display: flex; width: 100%; align-items: center; justify-content: center;}
+    .cta { text-align: center; margin: 40px 0; }
+    .cta button { background: #6a1b9a; color: #fff; padding: 15px 25px; border: none; border-radius: 5px; cursor: pointer; margin: 10px; font-size: 1em; }
+    .cta button:hover { background: #7b1fa2; }
+    .container { max-width: 1000px; margin: 30px auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    h2 { margin-top: 0; color: #333; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #ddd; }
+    th { background-color: #eeeeee; }
+    .status-upcoming { color: green; font-weight: bold; }
+    .status-completed { color: gray; font-weight: bold; }
+    .footer-nav { display: flex; justify-content: space-between; margin-top: 20px; }
+    .footer-nav button { padding: 10px 20px; border: none; background: #3f51b5; color: white; cursor: pointer; border-radius: 5px; }
+    .footer-nav button:hover { background: #5c6bc0; }
+  </style>
+</head>
+<body>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="invite.html">Invite Attendees</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html">Log Out</a>
+    </nav>
+    <header>
+        <div class="contain">
+        <h1>Admin Dashboard</h1>
+        <p>Manage events, invitations, and messages</p></div>
+      </header>
+    
+    
+      <div class="container">
+        <h2>Event Bookings</h2>
+    
+        <table>
+          <thead>
+            <tr>
+              <th>Event Name</th>
+              <th>Date</th>
+              <th>Venue</th>
+              <th>Guests</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Annual Tech Conference 2023</td>
+              <td>Sep 15, 2023</td>
+              <td>Convention Center</td>
+              <td>350</td>
+              <td class="status-upcoming">upcoming</td>
+            </tr>
+            <tr>
+              <td>Product Launch: NextGen</td>
+              <td>Oct 05, 2023</td>
+              <td>Tech Hub</td>
+              <td>120</td>
+              <td class="status-upcoming">upcoming</td>
+            </tr>
+            <tr>
+              <td>Leadership Retreat 2023</td>
+              <td>Aug 20, 2023</td>
+              <td>Mountain Resort</td>
+              <td>50</td>
+              <td class="status-completed">completed</td>
+            </tr>
+            <tr>
+              <td>Holiday Gala</td>
+              <td>Dec 15, 2023</td>
+              <td>Grand Hotel</td>
+              <td>200</td>
+              <td class="status-upcoming">upcoming</td>
+            </tr>
+            <tr>
+              <td>Team Building Workshop</td>
+              <td>Jul 10, 2023</td>
+              <td>Adventure Park</td>
+              <td>45</td>
+              <td class="status-completed">completed</td>
+            </tr>
+          </tbody>
+        </table>
+    
+        <div class="footer-nav">
+          <span>Showing 5 events</span>
+        </div>
+      </div>
+
+  <footer>
+    <p>&copy; 2025 Zvent. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,113 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zvent - Turning Visions into Unforgettable Events</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - Zvent</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-    header { background-image: url(invitebanner.png); background-position: center; background-size: cover; height: 25vh; color: white; padding: 40px 20px; text-align: center; display: flex; justify-content: center; align-items: center;}
-    header h1 { margin: 0; font-size: 2.5em; }
-    header p {font-size: large; font-weight: 900; color: white;}
-    .navbar {display: flex; }
-    nav { background: #6a1b9a; display: flex; justify-content: center; padding: 10px; }
-    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-    .services, .success-stories, .testimonials { background: #f3f3f3; margin-top: 30px; border-radius: 8px; padding: 20px; }
-    .card { margin-bottom: 20px; margin-left: 5px; margin-right: 5px; background: #fff; padding: 15px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .card h3 { margin-top: 0; }
-    .card-cont {display: flex; }
-    footer { background: #4a148c; color: #fff; text-align: center; padding: 30px 20px; margin-top: 40px; }
-    .cta-box { display: flex; width: 100%; align-items: center; justify-content: center;}
-    .cta { text-align: center; margin: 40px 0; }
-    .cta button { background: #6a1b9a; color: #fff; padding: 15px 25px; border: none; border-radius: 5px; cursor: pointer; margin: 10px; font-size: 1em; }
-    .cta button:hover { background: #7b1fa2; }
-    .incorrect {
-      color: red;
-      text-align: center;
-      margin-top: 20px;
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
     }
+
+    nav {
+      background: #6a1b9a;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header {
+      background-image: url(invitebanner.png);
+      background-position: center;
+      background-size: cover;
+      height: 25vh;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
     .main-con {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 40vh;
+      height: 60vh;
     }
 
-
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #f0f0f0;
-      height: 100vh;
-    }
-    .login-container {
+    .register-container {
       background: white;
       padding: 30px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       width: 300px;
     }
-    input {
+
+    .register-container input {
       width: 100%;
       padding: 10px;
       margin: 10px 0;
       border: 1px solid #ccc;
       border-radius: 5px;
     }
-    button {
+
+    .register-container button {
       width: 100%;
       padding: 10px;
-      background-color: #4CAF50;
+      background-color: #6a1b9a;
       color: white;
       border: none;
       border-radius: 5px;
       cursor: pointer;
     }
-    button:hover {
-      background-color: #45a049;
+
+    .register-container button:hover {
+      background-color: #7b1fa2;
+    }
+
+    footer {
+      background: #4a148c;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-    
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="invite.html">Invite Attendees</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="login.html">Log In</a>
-    </nav>
 
-    <header>
-        <h1>LOG IN</h1>
-      </header>
-    <div class="main-con">
-      <div class="login-container">
-  <h2>Login</h2>
-  <input type="text" id="username" placeholder="Username" required>
-  <input type="password" id="password" placeholder="Password" required>
-  <h4 class="incorrect">INCORRECT PASSWORD</h4>
-  <button onclick="login()">Login</button>
-</div>
-</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="invite.html">Invite Attendees</a>
+    <a href="attandance.html">Manage Attendees</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="login.html">Log In</a>
+  </nav>
+
+  <header>
+    <h1>REGISTER</h1>
+  </header>
+
+  <div class="main-con">
+    <div class="register-container">
+      <h2>Create Account</h2>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button onclick="register()">Register</button>
+      <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+  </div>
+
   <footer>
     <p>&copy; 2025 Zvent. All rights reserved.</p>
   </footer>
 
-
   <script>
-    function login() {
-      const user = document.getElementById("username").value;
-      const pass = document.getElementById("password").value;
-  
-      if (user === "admin" && pass === "password") {
-        window.location.href = "admin.html";
-      } else {
-        window.location.href = "incorrect.html";
-      }
+    function register() {
+      alert("Registration successful! Redirecting to login...");
+      window.location.href = "login.html";
     }
   </script>
 
-  
 </body>
 </html>

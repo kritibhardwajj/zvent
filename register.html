@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - Zvent</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: #6a1b9a;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header {
+      background-image: url(invitebanner.png);
+      background-position: center;
+      background-size: cover;
+      height: 25vh;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .main-con {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60vh;
+    }
+
+    .register-container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+
+    .register-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .register-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #6a1b9a;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .register-container button:hover {
+      background-color: #7b1fa2;
+    }
+
+    footer {
+      background: #4a148c;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="invite.html">Invite Attendees</a>
+    <a href="attandance.html">Manage Attendees</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="login.html">Log In</a>
+  </nav>
+
+  <header>
+    <h1>REGISTER</h1>
+  </header>
+
+  <div class="main-con">
+    <div class="register-container">
+      <h2>Create Account</h2>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button onclick="register()">Register</button>
+      <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Zvent. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function register() {
+      alert("Registration successful! Redirecting to login...");
+      window.location.href = "login.html";
+    }
+  </script>
+
+</body>
+</html>
